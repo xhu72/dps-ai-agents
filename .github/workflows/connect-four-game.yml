@@ -2,7 +2,13 @@ name: connect-four tests
 
 on:
   push:
+    paths:
+      - "connect-four-game/**"
+      - ".github/workflows/connect-four-game.yml"
   pull_request:
+    paths:
+      - "connect-four-game/**"
+      - ".github/workflows/connect-four-game.yml"
   workflow_dispatch:
 
 jobs:
